@@ -346,46 +346,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: fov
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: adsFOV
-      value: 75
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 2118146335}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: adsSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: maxLookUpAngle
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: minLookUpAngle
-      value: -90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: verticalSensitivity
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: horizontalSensitivity
-      value: 3.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: adsVerticalSensitivity
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-      propertyPath: adsHorizontalSensitivity
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 6731226696031029052, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -512,8 +472,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2118146335 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6731226696881777438, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-  m_PrefabInstance: {fileID: 537381166}
-  m_PrefabAsset: {fileID: 0}
