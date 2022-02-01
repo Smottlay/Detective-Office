@@ -339,7 +339,7 @@ MonoBehaviour:
   m_AreaLightEmissiveMeshShadowCastingMode: 0
   m_AreaLightEmissiveMeshMotionVectorGenerationMode: 0
   m_AreaLightEmissiveMeshLayer: -1
---- !u!1001 &886157130
+--- !u!1001 &537381166
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -352,15 +352,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: adsFOV
-      value: 50
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 977540452}
+      objectReference: {fileID: 2118146335}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: adsSpeed
-      value: 3
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: maxLookUpAngle
@@ -372,19 +372,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: verticalSensitivity
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: horizontalSensitivity
-      value: 4
+      value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: adsVerticalSensitivity
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821110, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: adsHorizontalSensitivity
-      value: 2
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6731226696031029052, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: m_RootOrder
@@ -436,11 +436,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
---- !u!4 &977540452 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6731226696881777438, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
-  m_PrefabInstance: {fileID: 886157130}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1748550237
 GameObject:
   m_ObjectHideFlags: 0
@@ -517,3 +512,8 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &2118146335 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6731226696881777438, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
+  m_PrefabInstance: {fileID: 537381166}
+  m_PrefabAsset: {fileID: 0}

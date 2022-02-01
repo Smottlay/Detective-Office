@@ -193,17 +193,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e52db337b7fc3b4d83bf973fce544d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 6731226696881777438}
-  VerticalSensitivity: 10
-  HorizontalSensitivity: 10
-  MaxLookUpAngle: 85
-  MinLookUpAngle: -85
-  FOV: 80
-  ADSVerticalSensitivity: 0.1
-  ADSHorizontalSensitivity: 0.1
-  Aimingmode: 0
-  ADSFOV: 50
-  ADSspeed: 0.3
+  target: {fileID: 6731226696881777438}
+  verticalSensitivity: 3.5
+  horizontalSensitivity: 3.5
+  maxLookUpAngle: 90
+  minLookUpAngle: -90
+  fov: 90
+  adsVerticalSensitivity: 0.5
+  adsHorizontalSensitivity: 0.5
+  aimingmode: 0
+  adsFOV: 75
+  adsSpeed: 0.1
   playerInputController: {fileID: 6731226696237527361}
   controlScheme: 
   rotX: 0

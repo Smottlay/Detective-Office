@@ -90,8 +90,8 @@ public class CameraController : MonoBehaviour
         if (aimingDownSights)
         {
             main.fieldOfView = Mathf.Lerp(main.fieldOfView, adsFOV, adsSpeed);
-            xSensitivity = adsHorizontalSensitivity;
-            ySensitivity = adsVerticalSensitivity;
+            xSensitivity = adsHorizontalSensitivity / 10;
+            ySensitivity = adsVerticalSensitivity / 10;
         }
         else
         {
