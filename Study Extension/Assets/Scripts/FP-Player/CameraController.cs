@@ -66,12 +66,6 @@ public class CameraController : MonoBehaviour
         transform.position = target.position;
     }
     
-    void FixedUpdate()
-    {
-        //transform.position = target.position;
-    }
-
- 
     void ADS()
     {
         switch (aimingmode)
