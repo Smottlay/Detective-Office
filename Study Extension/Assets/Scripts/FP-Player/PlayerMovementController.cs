@@ -22,9 +22,7 @@ public class PlayerMovementController : MonoBehaviour
      [SerializeField] bool isSprinting = false;
      [SerializeField] float movementSpeed;
      [SerializeField] Rigidbody rb;
-
-     public bool _canJump;
-
+     
      public Transform mainCamera;
      public FirstPersonInputmanager playerInputController;
      Vector2 pInput;
@@ -32,7 +30,7 @@ public class PlayerMovementController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        _canJump = true;
+        
     }
 
     private void Update()
