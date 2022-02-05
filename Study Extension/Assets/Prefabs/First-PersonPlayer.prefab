@@ -1,5 +1,95 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &537798487
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 537798488}
+  m_Layer: 0
+  m_Name: DropPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &537798488
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537798487}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.7}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 6731226695733821112}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1080375886
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1080375887}
+  m_Layer: 0
+  m_Name: InspectPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1080375887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080375886}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.35}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 6731226695733821112}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1208077887
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1208077888}
+  m_Layer: 0
+  m_Name: HoldPosition
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1208077888
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1208077887}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.4, y: -0.35, z: 0.4}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_Children: []
+  m_Father: {fileID: 6731226695733821112}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578447086
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,7 +101,6 @@ GameObject:
   - component: {fileID: 1578447087}
   - component: {fileID: 1578447090}
   - component: {fileID: 1578447089}
-  - component: {fileID: 1578447088}
   m_Layer: 6
   m_Name: Capsule
   m_TagString: Player
@@ -82,20 +171,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &1578447088
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1578447086}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6731226695733821113
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,8 +182,9 @@ GameObject:
   - component: {fileID: 6731226695733821112}
   - component: {fileID: 6731226695733821108}
   - component: {fileID: 6731226695733821109}
-  - component: {fileID: 6731226695733821110}
   - component: {fileID: 6731226695733821111}
+  - component: {fileID: 6731226695733821110}
+  - component: {fileID: 1836624808}
   m_Layer: 0
   m_Name: FirstPersonCamera
   m_TagString: MainCamera
@@ -126,7 +202,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1208077888}
+  - {fileID: 537798488}
+  - {fileID: 1080375887}
   m_Father: {fileID: 6731226696031029052}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -181,34 +260,6 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6731226695733821113}
   m_Enabled: 1
---- !u!114 &6731226695733821110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6731226695733821113}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6e52db337b7fc3b4d83bf973fce544d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 6731226696881777438}
-  verticalSensitivity: 3.5
-  horizontalSensitivity: 3.5
-  maxLookUpAngle: 70
-  minLookUpAngle: -90
-  fov: 90
-  adsVerticalSensitivity: 0.5
-  adsHorizontalSensitivity: 0.5
-  aimingmode: 0
-  adsFOV: 50
-  adsSpeed: 0.1
-  playerInputController: {fileID: 6731226696237527361}
-  controlScheme: 
-  rotX: 0
-  rotY: 0
-  canMove: 1
 --- !u!114 &6731226695733821111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -323,6 +374,51 @@ MonoBehaviour:
       data1: 0
       data2: 0
   defaultFrameSettings: 0
+--- !u!114 &6731226695733821110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731226695733821113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e52db337b7fc3b4d83bf973fce544d6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 6731226696881777438}
+  verticalSensitivity: 3.5
+  horizontalSensitivity: 3.5
+  maxLookUpAngle: 70
+  minLookUpAngle: -90
+  fov: 90
+  adsVerticalSensitivity: 0.5
+  adsHorizontalSensitivity: 0.5
+  aimingmode: 0
+  adsFOV: 50
+  adsSpeed: 0.1
+  playerInputController: {fileID: 6731226696237527361}
+  controlScheme: 
+  rotX: 0
+  rotY: 0
+  canMove: 1
+--- !u!114 &1836624808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731226695733821113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cffe8df3f96e894283430276d5e62fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _playerInputController: {fileID: 6731226696237527361}
+  objTarget: {fileID: 1208077888}
+  dropTarget: {fileID: 537798488}
+  holdingObject: 0
+  rayDistance: 1
 --- !u!1 &6731226696031029053
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +568,7 @@ GameObject:
   - component: {fileID: 6731226696901830698}
   - component: {fileID: 6731226696901830699}
   - component: {fileID: 6731226696901830700}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: FirstPersonMovement
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -517,9 +613,9 @@ MonoBehaviour:
   isInAir: 0
   isGrounded: 0
   isSprinting: 0
+  isCrouching: 0
   movementSpeed: 0
   rb: {fileID: 0}
-  _canJump: 0
   mainCamera: {fileID: 6731226695733821112}
   playerInputController: {fileID: 6731226696237527361}
 --- !u!54 &6731226696901830699
@@ -548,7 +644,7 @@ CapsuleCollider:
   m_Material: {fileID: 13400000, guid: 14662392fc6fcca498f148c38c083ffd, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.2318907
-  m_Height: 2
+  m_Radius: 0.5
+  m_Height: 1.8
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: -0.1, z: 0}

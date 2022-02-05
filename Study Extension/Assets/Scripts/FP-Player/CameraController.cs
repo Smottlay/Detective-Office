@@ -30,13 +30,11 @@ public class CameraController : MonoBehaviour
       public FirstPersonInputmanager playerInputController;
 
       public string controlScheme;
-      
-      
+
       [SerializeField] float rotX = 0, rotY = 0;
       [SerializeField] bool canMove = true;
 
-      
-    public enum ADSType
+      public enum ADSType
     {
         HoldToAim,
         ClickToAim
@@ -45,14 +43,13 @@ public class CameraController : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         main = GetComponent<Camera>();
-        
+
         verticalSensitivity = verticalSensitivity / 100;
         horizontalSensitivity = horizontalSensitivity / 100;
     }
 
     private void Update()
     {
-
         ADS();
         _mouseInput = playerInputController.inputActions.FirstPersonInputMap.Look.ReadValue<Vector2>();
         if (canMove)
@@ -66,7 +63,7 @@ public class CameraController : MonoBehaviour
         transform.position = target.position;
     }
     
-    void ADS()
+    public void ADS()
     {
         switch (aimingmode)
         {

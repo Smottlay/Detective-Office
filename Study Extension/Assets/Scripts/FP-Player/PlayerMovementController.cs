@@ -20,6 +20,7 @@ public class PlayerMovementController : MonoBehaviour
      [SerializeField] bool isInAir = false;
      [SerializeField] bool isGrounded = false;
      [SerializeField] bool isSprinting = false;
+     [SerializeField] bool isCrouching = false;
      [SerializeField] float movementSpeed;
      [SerializeField] Rigidbody rb;
      
@@ -30,13 +31,13 @@ public class PlayerMovementController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        
     }
 
     private void Update()
     {
         //jumpLogic();
         sprintLogic();
+        crouchLogic();
     }
     private void FixedUpdate()
     {
@@ -101,7 +102,7 @@ public class PlayerMovementController : MonoBehaviour
     
         if (!isInAir)
         {
-            rb.useGravity = false;
+            //rb.useGravity = false;
             Vector3 movement = Vector3.right * pInput.x * movementSpeed + Vector3.up * pInput.y * movementSpeed;
             
             rb.velocity = transform.right * movement.x + transform.forward * movement.y + transform.up * rb.velocity.y;
@@ -109,12 +110,30 @@ public class PlayerMovementController : MonoBehaviour
         
         else
         {
-            rb.useGravity = true;
+           // rb.useGravity = true;
             if (airMovement)
             {
                 Vector3 movement = Vector3.right * pInput.x * movementSpeed + Vector3.up * pInput.y * movementSpeed;
                 
                 rb.velocity = transform.right * movement.x + transform.forward * movement.y + transform.up * rb.velocity.y;
+            }
+            
+        }
+    }
+
+    void crouchLogic()
+    {
+        if (playerInputController.inputActions.FirstPersonInputMap.Crouch.triggered)
+        {
+            isCrouching = !isCrouching;
+
+            if (isCrouching)
+            {
+                transform.localScale = new Vector3(0.5f, 1.0f, 0.5f);
+            }
+            else if (!isCrouching)
+            {
+                transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             }
             
         }
