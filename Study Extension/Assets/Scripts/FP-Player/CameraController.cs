@@ -21,13 +21,14 @@ public class CameraController : MonoBehaviour
       [SerializeField] ADSType aimingmode;
       [SerializeField] float adsFOV;
       [SerializeField] float adsSpeed;
-    
+
       private Vector2 _mouseInput;
       private bool aimingDownSights = false;
       private float xSensitivity;
       private float ySensitivity;
       Camera main;
       public FirstPersonInputmanager playerInputController;
+      public Pickup _pickup;
 
       public string controlScheme;
 
@@ -46,11 +47,14 @@ public class CameraController : MonoBehaviour
 
         verticalSensitivity = verticalSensitivity / 100;
         horizontalSensitivity = horizontalSensitivity / 100;
+
+        _pickup = GetComponent<Pickup>();
+        
     }
 
     private void Update()
     {
-        ADS();
+        DisableADS();
         _mouseInput = playerInputController.inputActions.FirstPersonInputMap.Look.ReadValue<Vector2>();
         if (canMove)
         {
@@ -63,7 +67,7 @@ public class CameraController : MonoBehaviour
         transform.position = target.position;
     }
     
-    public void ADS()
+    private void ADS()
     {
         switch (aimingmode)
         {
@@ -89,6 +93,20 @@ public class CameraController : MonoBehaviour
             main.fieldOfView = Mathf.Lerp(main.fieldOfView, fov, adsSpeed);
             xSensitivity = horizontalSensitivity;
             ySensitivity = verticalSensitivity;
+        }
+    }
+
+    private void DisableADS()
+    {
+        if (_pickup.holdingObject == true)
+        {
+            main.fieldOfView = Mathf.Lerp(main.fieldOfView, fov, adsSpeed);
+            xSensitivity = horizontalSensitivity;
+            ySensitivity = verticalSensitivity; 
+        }
+        else
+        {
+            ADS();
         }
     }
 }

@@ -10,15 +10,14 @@ using Vector3 = UnityEngine.Vector3;
 public class Pickup : MonoBehaviour
 {
     public FirstPersonInputmanager _playerInputController;
-
+    
     public Transform objTarget;
     public Transform dropTarget;
 
+    public GameObject heldObject;
     public bool holdingObject;
-    private GameObject heldObject;
-    [SerializeField] float rayDistance;
-    
-    
+    public float rayDistance;
+
     private void Start()
     {
         Physics.IgnoreLayerCollision(6,3);
@@ -44,8 +43,10 @@ public class Pickup : MonoBehaviour
         {
             if (Physics.Raycast(raycast, out hit, rayDistance))
             {
+                /*
                 print("Found an object - distance: " + hit.distance);
-                //Debug.DrawLine(raycast.origin, hit.point, Color.blue, 200);
+                Debug.DrawLine(raycast.origin, hit.point, Color.blue, 200);
+                */
 
                 if (hit.transform.CompareTag("PickObject"))
                 {
@@ -80,3 +81,4 @@ public class Pickup : MonoBehaviour
         }
     }
 }
+

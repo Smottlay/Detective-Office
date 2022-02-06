@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080375886}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0.35}
+  m_LocalPosition: {x: 0, y: 0, z: 0.5}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 6731226695733821112}
@@ -185,6 +185,7 @@ GameObject:
   - component: {fileID: 6731226695733821111}
   - component: {fileID: 6731226695733821110}
   - component: {fileID: 1836624808}
+  - component: {fileID: 1178751949}
   m_Layer: 0
   m_Name: FirstPersonCamera
   m_TagString: MainCamera
@@ -397,7 +398,9 @@ MonoBehaviour:
   aimingmode: 0
   adsFOV: 50
   adsSpeed: 0.1
+  holdingOBJ: 0
   playerInputController: {fileID: 6731226696237527361}
+  _pickup: {fileID: 0}
   controlScheme: 
   rotX: 0
   rotY: 0
@@ -418,7 +421,22 @@ MonoBehaviour:
   objTarget: {fileID: 1208077888}
   dropTarget: {fileID: 537798488}
   holdingObject: 0
+  heldObject: {fileID: 0}
   rayDistance: 1
+--- !u!114 &1178751949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6731226695733821113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a357b9d5fc170734a838cf909b0e6a57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerInputController: {fileID: 6731226696237527361}
+  inspectTarget: {fileID: 1080375887}
 --- !u!1 &6731226696031029053
 GameObject:
   m_ObjectHideFlags: 0
