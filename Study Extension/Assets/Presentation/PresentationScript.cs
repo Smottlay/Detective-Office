@@ -3,12 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class PresentationScript : MonoBehaviour
 {
     public Canvas[] cards;
     public int arrayCount = 0;
 
+    
     public void Update()
     {
         if (Keyboard.current.rightArrowKey.wasPressedThisFrame)
@@ -20,9 +22,15 @@ public class PresentationScript : MonoBehaviour
             arrayCount--;
         }
 
+        if (Keyboard.current.bKey.wasPressedThisFrame)
+        {
+            SceneManager.LoadScene(1);
+        }
+
         CardSelect();
-        
-        
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+
         if (arrayCount > 5)
         {
             arrayCount = 0;
