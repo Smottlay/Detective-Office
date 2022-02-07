@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Runtime.Versioning;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class PlayerMovementController : MonoBehaviour
@@ -38,6 +39,11 @@ public class PlayerMovementController : MonoBehaviour
         //jumpLogic();
         sprintLogic();
         crouchLogic();
+
+        if (Keyboard.current.backspaceKey.isPressed)
+        {
+            SceneManager.LoadScene(0);
+        }
     }
     private void FixedUpdate()
     {
