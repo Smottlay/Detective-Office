@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 1481.7754, g: 1835.8867, b: 2430.4492, a: 1}
+  m_IndirectSpecularColor: {r: 0.17980957, g: 0.17980957, b: 0.17980957, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -243,7 +243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821111, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: clearColorMode
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6731226695733821111, guid: 8fb8dc6fd17e997409610a4c9b33b3f7, type: 3}
       propertyPath: backgroundColorHDR.b
@@ -385,7 +385,7 @@ MonoBehaviour:
   m_PointlightHDType: 0
   m_SpotLightShape: 0
   m_AreaLightShape: 0
-  m_Intensity: 2000000
+  m_Intensity: 10000
   m_EnableSpotReflector: 1
   m_LuxAtDistance: 1
   m_InnerSpotPercent: 0
@@ -481,7 +481,7 @@ MonoBehaviour:
   m_ShadowVariant: 0
   m_ShadowPrecision: 0
   useOldInspector: 0
-  useVolumetric: 1
+  useVolumetric: 0
   featuresFoldout: 1
   showAdditionalSettings: 0
   m_AreaLightEmissiveMeshShadowCastingMode: 0
@@ -499,7 +499,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 159154.94
+  m_Intensity: 795.7747
   m_Range: 400
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -541,8 +541,8 @@ Light:
   m_Lightmapping: 4
   m_LightShadowCasterMode: 2
   m_AreaSize: {x: 0.01, y: 0.5}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 4900
+  m_BounceIntensity: 0
+  m_ColorTemperature: 4549
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 400}
   m_UseBoundingSphereOverride: 0
@@ -557,7 +557,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1096171182}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9646, y: 1.345, z: -1.0863}
+  m_LocalPosition: {x: -0.951, y: 1.292, z: -1.387}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1046403648}
@@ -1487,9 +1487,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 251438916}
     m_Modifications:
+    - target: {fileID: 8031839705881829063, guid: eb553321592b4f44196db8bfad379cbe, type: 3}
+      propertyPath: m_ScaleInLightmap
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8031839705881829063, guid: eb553321592b4f44196db8bfad379cbe, type: 3}
+      propertyPath: m_StitchLightmapSeams
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8391947561607986962, guid: eb553321592b4f44196db8bfad379cbe, type: 3}
       propertyPath: m_Name
       value: Door
+      objectReference: {fileID: 0}
+    - target: {fileID: 8391947561607986962, guid: eb553321592b4f44196db8bfad379cbe, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967294
       objectReference: {fileID: 0}
     - target: {fileID: 9168765293800531368, guid: eb553321592b4f44196db8bfad379cbe, type: 3}
       propertyPath: m_RootOrder
