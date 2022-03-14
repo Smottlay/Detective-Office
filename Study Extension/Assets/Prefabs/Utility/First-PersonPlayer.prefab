@@ -250,7 +250,7 @@ Camera:
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
+  m_OcclusionCulling: 0
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!81 &6731226695733821109
@@ -321,15 +321,15 @@ MonoBehaviour:
       enableBigTilePrepass: 0
       isFptlEnabled: 0
   clearColorMode: 0
-  backgroundColorHDR: {r: 0.043735042, g: 0.088655606, b: 0.21952623, a: 0}
+  backgroundColorHDR: {r: 0, g: 0, b: 0, a: 0}
   clearDepth: 1
   volumeLayerMask:
     serializedVersion: 2
     m_Bits: 4294967295
   volumeAnchorOverride: {fileID: 0}
-  antialiasing: 0
+  antialiasing: 1
   SMAAQuality: 2
-  dithering: 0
+  dithering: 1
   stopNaNs: 0
   taaSharpenStrength: 0.5
   TAAQuality: 1
@@ -396,9 +396,8 @@ MonoBehaviour:
   adsVerticalSensitivity: 0.5
   adsHorizontalSensitivity: 0.5
   aimingmode: 0
-  adsFOV: 50
+  adsFOV: 70
   adsSpeed: 0.1
-  holdingOBJ: 0
   playerInputController: {fileID: 6731226696237527361}
   _pickup: {fileID: 0}
   controlScheme: 
@@ -420,8 +419,8 @@ MonoBehaviour:
   _playerInputController: {fileID: 6731226696237527361}
   objTarget: {fileID: 1208077888}
   dropTarget: {fileID: 537798488}
-  holdingObject: 0
   heldObject: {fileID: 0}
+  holdingObject: 0
   rayDistance: 1
 --- !u!114 &1178751949
 MonoBehaviour:
@@ -435,8 +434,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a357b9d5fc170734a838cf909b0e6a57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInputController: {fileID: 6731226696237527361}
+  _playerInputController: {fileID: 6731226696237527361}
+  _pickup: {fileID: 1836624808}
+  _cameraController: {fileID: 6731226695733821110}
+  _playerMovementController: {fileID: 6731226696901830698}
   inspectTarget: {fileID: 1080375887}
+  rotationSpeed: 0.1
 --- !u!1 &6731226696031029053
 GameObject:
   m_ObjectHideFlags: 0
@@ -462,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 6731226696031029053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.12566614, y: 0.973, z: 1.715236}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.95, z: 1}
   m_Children:
   - {fileID: 6731226696901830701}
   - {fileID: 6731226695733821112}

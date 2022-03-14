@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 315442127263129213}
   - component: {fileID: 3733333890727236056}
   - component: {fileID: 1453396236234761490}
+  - component: {fileID: 1940973657773626833}
   m_Layer: 0
   m_Name: CoatHanger
   m_TagString: Untagged
@@ -25,7 +26,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1093104073911436487}
-  m_LocalRotation: {x: -0, y: -0.18197815, z: -0, w: 0.9833026}
+  m_LocalRotation: {x: 0, y: -0.18197815, z: 0, w: 0.9833026}
   m_LocalPosition: {x: 2.11, y: 1.131, z: -2.156887}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -81,3 +82,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!136 &1940973657773626833
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093104073911436487}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.22050905
+  m_Height: 2.1965833
+  m_Direction: 1
+  m_Center: {x: 0, y: -0.2861078, z: 0}
