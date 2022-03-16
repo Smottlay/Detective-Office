@@ -23,7 +23,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 1
   m_IsActive: 1
 --- !u!4 &7913234000919666217
 Transform:
@@ -194,6 +194,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet-Drawer02
       objectReference: {fileID: 0}
+    - target: {fileID: 3433068883633486713, guid: 290b9e6437bea3f488a23d31bef283f9, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 3433068883633486713, guid: 290b9e6437bea3f488a23d31bef283f9, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3433068883633486716, guid: 290b9e6437bea3f488a23d31bef283f9, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -325,6 +333,14 @@ PrefabInstance:
     - target: {fileID: 732318271433834794, guid: ae379842acc521043bc05b4bd8373255, type: 3}
       propertyPath: m_Name
       value: Cabinet-Drawer04
+      objectReference: {fileID: 0}
+    - target: {fileID: 732318271433834794, guid: ae379842acc521043bc05b4bd8373255, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 732318271433834794, guid: ae379842acc521043bc05b4bd8373255, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 732318271433834799, guid: ae379842acc521043bc05b4bd8373255, type: 3}
       propertyPath: m_RootOrder
@@ -458,6 +474,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cabinet-Drawer01
       objectReference: {fileID: 0}
+    - target: {fileID: 728886732385745967, guid: 65bd83fcac02dd944bc5ff7b195c1fcb, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 728886732385745967, guid: 65bd83fcac02dd944bc5ff7b195c1fcb, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 728886732385745968, guid: 65bd83fcac02dd944bc5ff7b195c1fcb, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -583,6 +607,14 @@ PrefabInstance:
     - target: {fileID: 6876496120402625664, guid: eb48202d4a3c1ce4c945e4b949d0ff1f, type: 3}
       propertyPath: m_Name
       value: Cabinet-Drawer03
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876496120402625664, guid: eb48202d4a3c1ce4c945e4b949d0ff1f, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
+      objectReference: {fileID: 0}
+    - target: {fileID: 6876496120402625664, guid: eb48202d4a3c1ce4c945e4b949d0ff1f, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb48202d4a3c1ce4c945e4b949d0ff1f, type: 3}

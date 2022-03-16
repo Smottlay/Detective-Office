@@ -32,7 +32,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3141482375139406364}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.395, z: -0.7981173}
   m_LocalScale: {x: 1.1, y: 1.1, z: 1.1}
   m_Children:
@@ -243,7 +243,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156627392715130434, guid: 213154768513c094290f66ce09f9a3f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156627392715130434, guid: 213154768513c094290f66ce09f9a3f8, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 213154768513c094290f66ce09f9a3f8, type: 3}
@@ -265,7 +269,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 2891386429346791287, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_RootOrder
@@ -375,7 +383,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3156627392715130434, guid: 213154768513c094290f66ce09f9a3f8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3156627392715130434, guid: 213154768513c094290f66ce09f9a3f8, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 213154768513c094290f66ce09f9a3f8, type: 3}
@@ -397,7 +409,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 2891386429346791287, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_RootOrder
@@ -463,7 +479,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 2891386429346791287, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_RootOrder
@@ -529,7 +549,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2552296410261874125, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 2891386429346791287, guid: 5dbdbb5879dd2264bb5f38a11e203445, type: 3}
       propertyPath: m_RootOrder
@@ -639,7 +663,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5466644655285004373, guid: cb39f5fac81a55a41ab92b1fa89207aa, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5466644655285004373, guid: cb39f5fac81a55a41ab92b1fa89207aa, type: 3}
+      propertyPath: m_TagString
+      value: Drawer
       objectReference: {fileID: 0}
     - target: {fileID: 5826972000821922176, guid: cb39f5fac81a55a41ab92b1fa89207aa, type: 3}
       propertyPath: m_Materials.Array.data[0]

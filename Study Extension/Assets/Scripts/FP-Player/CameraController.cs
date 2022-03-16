@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviour
       private float ySensitivity;
       Camera main;
       public FirstPersonInputmanager playerInputController;
-      public Pickup _pickup;
+      public Interact _interact;
 
       public string controlScheme;
 
@@ -48,7 +48,7 @@ public class CameraController : MonoBehaviour
         verticalSensitivity = verticalSensitivity / 100;
         horizontalSensitivity = horizontalSensitivity / 100;
 
-        _pickup = GetComponent<Pickup>();
+        _interact = GetComponent<Interact>();
         
     }
 
@@ -98,7 +98,7 @@ public class CameraController : MonoBehaviour
 
     private void DisableADS()
     {
-        if (_pickup.holdingObject == true)
+        if (_interact.holdingObject == true)
         {
             main.fieldOfView = Mathf.Lerp(main.fieldOfView, fov, adsSpeed);
             xSensitivity = horizontalSensitivity;

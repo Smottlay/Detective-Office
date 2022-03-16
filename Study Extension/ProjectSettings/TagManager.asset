@@ -6,6 +6,7 @@ TagManager:
   tags:
   - FirstPersonPlayer
   - PickObject
+  - Drawer
   layers:
   - Default
   - TransparentFX
