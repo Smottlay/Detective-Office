@@ -43,12 +43,6 @@ public class Analyze : MonoBehaviour
                 _playerMovementController.GetComponent<PlayerMovementController>().enabled = false;
                 _cameraController.GetComponent<CameraController>().enabled = false;
                 _interact.pickupDistance = 0.001f;
-
-                Vector2 mousePosition = Mouse.current.position.ReadValue();
-                float xAxis = mousePosition.x;
-                float yAxis = mousePosition.y;
-
-                _interact.heldObject.transform.Rotate(xAxis*rotationSpeed*Time.deltaTime,yAxis*rotationSpeed*Time.deltaTime,0,Space.World);
                 
                 //Cursor.lockState = CursorLockMode.None;
                 //Cursor.visible = true;
