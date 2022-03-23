@@ -201,7 +201,7 @@ Material:
     - _RefractionModel: 0
     - _RenderQueueType: 1
     - _RequireSplitLighting: 0
-    - _Roughness: 0.25
+    - _Roughness: 0.43
     - _Saturation: 0.65
     - _Saturation_1: 0.4
     - _Smoothness: 0
