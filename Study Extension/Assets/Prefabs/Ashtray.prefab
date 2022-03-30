@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 5773831734937340336}
   - component: {fileID: 8630077859706289530}
   - component: {fileID: 919132147701311227}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Ashtray
-  m_TagString: Untagged
+  m_TagString: PickObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -167,6 +167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FullCig
       objectReference: {fileID: 0}
+    - target: {fileID: 6534148393802753718, guid: c6e368354e0ee2d4eb1ef49b006a2f47, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c6e368354e0ee2d4eb1ef49b006a2f47, type: 3}
 --- !u!4 &5001394261152333446 stripped
@@ -187,7 +191,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fd932220f4d3bd84aaf036507fc59a17, type: 2}
     - target: {fileID: 8516124002094681301, guid: d11ad0f34aeb1db42965c9d87303d7df, type: 3}
       propertyPath: m_Name
-      value: SmallCig
+      value: SmallCig01
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516124002094681301, guid: d11ad0f34aeb1db42965c9d87303d7df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9035497403804309103, guid: d11ad0f34aeb1db42965c9d87303d7df, type: 3}
       propertyPath: m_RootOrder
@@ -265,7 +273,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: fd932220f4d3bd84aaf036507fc59a17, type: 2}
     - target: {fileID: 8516124002094681301, guid: d11ad0f34aeb1db42965c9d87303d7df, type: 3}
       propertyPath: m_Name
-      value: SmallCig (1)
+      value: SmallCig02
+      objectReference: {fileID: 0}
+    - target: {fileID: 8516124002094681301, guid: d11ad0f34aeb1db42965c9d87303d7df, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 9035497403804309103, guid: d11ad0f34aeb1db42965c9d87303d7df, type: 3}
       propertyPath: m_RootOrder
@@ -396,6 +408,10 @@ PrefabInstance:
     - target: {fileID: 3318142841928037610, guid: 53e779ad1ce460b4782ee63eacf11f54, type: 3}
       propertyPath: m_Name
       value: MidCig
+      objectReference: {fileID: 0}
+    - target: {fileID: 3318142841928037610, guid: 53e779ad1ce460b4782ee63eacf11f54, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 4294967295
       objectReference: {fileID: 0}
     - target: {fileID: 3822594172721796415, guid: 53e779ad1ce460b4782ee63eacf11f54, type: 3}
       propertyPath: m_Materials.Array.data[0]
